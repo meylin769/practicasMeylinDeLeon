@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Viajes</title>
+</head>
+<body>
+    <h1>Página de reserva de viajes ⭐⭐⭐</h1>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            
+            <p>
+                <label>Nombre:</label><br>
+                <input type="text" name="nombre">
+            </p>
+
+            <p>
+                <label>Correo electrónico:</label><br>
+                <input type="email" name="correo" placeholder="example@email.com">
+            </p>
+
+            <p>
+                <label>Teléfono:</label><br>
+                <input type="tel" name="telefono">
+            </p>
+
+            <p>
+                <label>Número de acompañantes:</label><br>
+                <input type="number" name="acompanantes" step="1" min="1" max="5">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Datos del viaje</legend>
+
+            <p>
+                <label>Lugar de origen:</label><br>
+                <input type="text" name="origen" value="San Salvador" readonly>
+            </p>
+
+            <p>
+                <label>Lugar de destino:</label><br>
+                <select name="destino">
+                    <option value="lauterbrunnen">Lauterbrunnen</option>
+                    <option value="florencia">Florencia</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="venecia">Venecia</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Fecha de salida:</label><br>
+                <input type="date" name="fecha_salida">
+            </p>
+
+            <p>
+                <label>Fecha de regreso:</label><br>
+                <input type="date" name="fecha_regreso">
+            </p>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar Reserva">
+    </form>
+
+</body>
+</html>
